@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    
+    <css>
+      body {
+      background-color: rgb(42, 42, 42);
+      }
+    </css>
+    
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Byrdshot by iMakeMehGames |=| Unity WebGL Player</title>
@@ -33,7 +40,7 @@
         frameworkUrl: buildUrl + "/webgl v4.framework.js",
         codeUrl: buildUrl + "/webgl v4.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "NotACompany",
+        companyName: "N/A",
         productName: "Byrdshot",
         productVersion: "4",
       };
@@ -62,7 +69,7 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        window.devicePixelRatio = 0.8;
+        window.devicePixelRatio = 2;
         canvas.style.width = "80%";
         canvas.style.height = "45%";
       }
