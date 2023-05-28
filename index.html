@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width="80%" height="45"></canvas>
+      <canvas id="unity-canvas" width="80%" height="45%"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,7 +22,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">iMakeMehGames (KPR) - Birdshot</div>
+        <div id="unity-build-title">iMakeMehGames - Byrdshot</div>
       </div>
     </div>
     <script>
@@ -34,7 +34,7 @@
         codeUrl: buildUrl + "/webgl v4.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "NotACompany",
-        productName: "iMakeMehGames (KPR) - Birdshot",
+        productName: "Byrdshot",
         productVersion: "4",
       };
 
@@ -50,7 +50,7 @@
       // Set this to false if you want to decouple this synchronization from
       // happening inside the engine, and you would instead like to size up
       // the canvas DOM size and WebGL render target sizes yourself.
-      config.matchWebGLToCanvasSize = false;
+      //config.matchWebGLToCanvasSize = false;
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
@@ -62,6 +62,7 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
+        window.devicePixelRatio = 0.8;
         canvas.style.width = "80%";
         canvas.style.height = "45%";
       }
