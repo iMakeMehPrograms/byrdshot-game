@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop" style="position: absolute; left: 50%; right: 50%; width: 100%; height: 100%">
+    <div id="unity-container" class="unity-desktop" style="position: absolute; left: 50%; right: 50%; width: 80%; height: 80%">
       <canvas id="unity-canvas" width="1024px" height="576px" style="width: 100%; height: 100%"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -73,8 +73,8 @@
         }, 5000);
       } else {
         config.devicePixelRatio = 1;
-        canvas.style.width = "80%";
-        canvas.style.height = "80%";
+        //canvas.style.width = "80%";
+        //canvas.style.height = "80%";
       }
       loadingBar.style.display = "block";
 
